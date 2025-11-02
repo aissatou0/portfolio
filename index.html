@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aissatou Diakhaby KANOUTE — Portfolio</title>
+  <meta name="description" content="Portfolio d'Aissatou Diakhaby KANOUTE — développement web, systèmes & réseaux, assurance construction." />
+  <meta property="og:title" content="Aissatou Diakhaby KANOUTE — Portfolio" />
+  <meta property="og:description" content="Développement web • Systèmes & réseaux • Projets étudiants et pro." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1020; --card:#0f172a; --muted:#94a3b8; --text:#e2e8f0; --accent:#38bdf8; --accent-2:#a78bfa; --ring:#22d3ee;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(56,189,248,.15), transparent 50%), radial-gradient(800px 600px at -10% 10%, rgba(167,139,250,.12), transparent 40%), var(--bg);}
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; height:auto}
+    .container{width:min(1100px, 92%); margin-inline:auto}
+    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:rgba(11,16,32,.6); border-bottom:1px solid rgba(148,163,184,.15); z-index:40}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:.9rem 0}
+    .nav a.logo{font-weight:800; letter-spacing:.4px}
+    .nav ul{display:flex; gap:1rem; list-style:none; padding:0; margin:0}
+    .chip{padding:.35rem .7rem; border:1px solid rgba(148,163,184,.25); border-radius:999px; color:var(--muted); font-size:.9rem}
+    .btn{display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1rem; background:linear-gradient(135deg,var(--accent),var(--accent-2)); border:none; color:#061018; font-weight:700; border-radius:12px; box-shadow:0 10px 24px rgba(56,189,248,.2);}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:2rem; align-items:center; padding:4rem 0 2rem}
+    .hero h1{font-size:clamp(2rem, 3.8vw, 3rem); line-height:1.1; margin:.3rem 0 1rem}
+    .hero p{color:var(--muted)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(148,163,184,.15); border-radius:16px; padding:1.2rem}
+    .grid{display:grid; gap:1rem}
+    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    section{padding:2.5rem 0}
+    h2{font-size:1.3rem; letter-spacing:.5px; margin:0 0 1rem}
+    .muted{color:var(--muted)}
+    .kpi{display:flex; gap:1.5rem; flex-wrap:wrap}
+    .kpi .item{min-width:130px}
+    .kpi .n{font-size:1.6rem; font-weight:800}
+    .tag{display:inline-flex; align-items:center; gap:.4rem; padding:.45rem .6rem; border:1px dashed rgba(148,163,184,.3); border-radius:10px; font-size:.86rem; color:var(--muted)}
+    .row{display:flex; gap:.8rem; flex-wrap:wrap}
+    footer{border-top:1px solid rgba(148,163,184,.15); padding:2rem 0; color:var(--muted); font-size:.95rem}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}} 
+    /* Focus ring */
+    :focus{outline:none}
+    :focus-visible{box-shadow:0 0 0 4px rgba(34,211,238,.35)}
+    /* Project card */
+    .proj{display:flex; flex-direction:column; gap:.8rem}
+    .proj h3{margin:.3rem 0 0; font-size:1.05rem}
+    .proj .links{display:flex; gap:.6rem}
+    .icon{width:18px;height:18px;display:inline-block;vertical-align:middle}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aissatou Diakhaby KANOUTE",
+    "jobTitle": "Développeuse web / Systèmes & Réseaux",
+    "email": "mailto:kanoutea39@gmail.com",
+    "url": "https://exemple.com/portfolio-aissatou-diakhaby-kanoute",
+    "sameAs": ["https://github.com/aissatou0","https://www.linkedin.com/in/aissatou-diakhaby-kanoute/"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#">AK</a>
+      <ul>
+        <li><a class="chip" href="#projets">Projets</a></li>
+        <li><a class="chip" href="#competences">Compétences</a></li>
+        <li><a class="chip" href="#parcours">Parcours</a></li>
+        <li><a class="chip" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="tag">Disponible pour alternance / stage</span>
+        <h1>Aissatou Diakhaby KANOUTE<br><span class="muted">Étudiante en Génie Logiciel, Réseaux & Systèmes</span></h1>
+        <p>Professionnelle motivée résidant à Dakar, avec un bon cursus scolaire, passionnée par le développement web, les systèmes et réseaux, la supervision, la virtualisation et l’algorithmique. Je vise à faire évoluer mes compétences dans des projets concrets et impactants.</p>
+        <div class="row" style="margin:1.2rem 0 0">
+          <a class="btn" href="#projets">Voir mes projets</a>
+          <a class="chip" href="mailto:kanoutea39@gmail.com">kanoutea39@gmail.com</a>
+        </div>
+        <div class="kpi" style="margin-top:1.2rem">
+          <div class="item card"><div class="n">12+</div><div class="muted">Projets académiques</div></div>
+          <div class="item card"><div class="n">3</div><div class="muted">Stacks: Symfony · React · Python</div></div>
+          <div class="item card"><div class="n">CCNA</div><div class="muted">Labs réseaux & sécurité</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Points forts</h2>
+        <ul class="muted" style="line-height:1.8">
+          <li>Dév. web: Symfony, Node/Express, React</li>
+          <li>Bases de données: MySQL, PostgreSQL</li>
+          <li>Ops: Linux, Nginx, Docker (basics)</li>
+          <li>Réseaux: VLAN, OSPF, HSRP, Routage</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="grid cols-3">
+        <article class="card proj">
+          <div class="muted">Linux • Apache • MySQL • PHP</div>
+          <h3>Projet LAMP 2‑tiers (VM Ubuntu)</h3>
+          <p class="muted">Déploiement d’une architecture 2‑tiers sur Ubuntu avec services séparés, base MySQL et hébergement web Apache.</p>
+        </article>
+        <article class="card proj">
+          <div class="muted">Supervision • Parc informatique</div>
+          <h3>GLPI + Zabbix + Grafana</h3>
+          <p class="muted">Mise en place supervision réseau avec GLPI pour gestion d’inventaire et Zabbix + Grafana pour tableaux de bord.</p>
+        </article>
+        <article class="card proj">
+          <div class="muted">SMTP • Webmail</div>
+          <h3>Roundcube + stack mail</h3>
+          <p class="muted">Configuration d’un serveur mail complet avec webmail Roundcube, gestion et consultation de messagerie via interface.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <strong>Programmation</strong>
+          <p class="muted">Bases en algorithmique, scripts et automation de tâches</p>
+        </div>
+        <div class="card">
+          <strong>Développement Web</strong>
+          <p class="muted">Stack LAMP, bases PHP/MySQL, HTML/CSS</p>
+        </div>
+        <div class="card">
+          <strong>Administration Systèmes</strong>
+          <p class="muted">Linux/Ubuntu, virtualisation</p>
+        </div>
+        <div class="card">
+          <strong>Supervision</strong>
+          <p class="muted">GLPI, Zabbix couplé à Grafana</p>
+        </div>
+        <div class="card">
+          <strong>Modélisation & Données</strong>
+          <p class="muted">SQL, Modélisation UML</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <strong>Licence GLRS — ISM Dakar</strong>
+          <p class="muted">Génie Logiciel, Réseaux & Systèmes (2023–2026)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p class="muted">Je suis ouverte aux opportunités (alternance, stage, missions). Écrivez‑moi ou connectons‑nous.</p>
+          <div class="row">
+            <a class="btn" href="mailto:kanoutea39@gmail.com" aria-label="Envoyer un email">Me contacter</a>
+            <a class="chip" href="https://github.com/aissatou0" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <form class="card" onsubmit="event.preventDefault(); alert('Merci ! Votre message a été envoyé.');">
+          <label class="muted" for="m">Envoyer un message</label>
+          <textarea id="m" rows="4" style="width:100%; margin-top:.5rem; padding:.8rem; border-radius:10px; background:#0b1228; border:1px solid rgba(148,163,184,.25); color:var(--text)" placeholder="Votre message..."></textarea>
+          <div style="margin-top:.6rem"><button class="btn" type="submit">Envoyer</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="y"></span> • Aissatou Diakhaby KANOUTE — Portfolio. Dernière maj : <span id="maj"></span>
+    </div>
+  </footer>
+
+  <script>
+    // Petites améliorations UX
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('maj').textContent = new Date().toLocaleDateString('fr-FR');
+  </script>
+</body>
+</html>
