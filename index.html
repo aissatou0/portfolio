@@ -1,19 +1,12 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aissatou Diakhaby KANOUTE — Portfolio</title>
-  <meta name="description" content="Portfolio d'Aissatou Diakhaby KANOUTE — développement web, systèmes & réseaux, assurance construction." />
-  <meta property="og:title" content="Aissatou Diakhaby KANOUTE — Portfolio" />
-  <meta property="og:description" content="Développement web • Systèmes & réseaux • Projets étudiants et pro." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="" />
-  <meta name="theme-color" content="#0ea5e9" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Aïssatou Kanouté | Développement full stack et backend Java</title>
+    <meta name="description" content="Portfolio d’Aïssatou Kanouté, étudiante en génie logiciel à Lille. Projets Java, Spring Boot et React. Recherche d’alternance M2 dès septembre 2027.">
+    <link rel="canonical" href="https://aissatou0.github.io/portfolio/">
+    <style>
     :root{
       --bg: #0b1020; --card:#0f172a; --muted:#94a3b8; --text:#e2e8f0; --accent:#38bdf8; --accent-2:#a78bfa; --ring:#22d3ee;
     }
@@ -55,150 +48,172 @@
     .proj h3{margin:.3rem 0 0; font-size:1.05rem}
     .proj .links{display:flex; gap:.6rem}
     .icon{width:18px;height:18px;display:inline-block;vertical-align:middle}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Aissatou Diakhaby KANOUTE",
-    "jobTitle": "Développeuse web / Systèmes & Réseaux",
-    "email": "mailto:kanoutea39@gmail.com",
-    "url": "https://exemple.com/portfolio-aissatou-diakhaby-kanoute",
-    "sameAs": ["https://github.com/aissatou0","https://www.linkedin.com/in/aissatou-diakhaby-kanoute/"]
-  }
-  </script>
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <a class="logo" href="#">AK</a>
-      <ul>
-        <li><a class="chip" href="#projets">Projets</a></li>
-        <li><a class="chip" href="#competences">Compétences</a></li>
-        <li><a class="chip" href="#parcours">Parcours</a></li>
-        <li><a class="chip" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div>
-        <span class="tag">Disponible pour alternance / stage</span>
-        <h1>Aissatou Diakhaby KANOUTE<br><span class="muted">Étudiante en Génie Logiciel, Réseaux & Systèmes</span></h1>
-        <p>Professionnelle motivée résidant en France à Lille, avec un bon cursus scolaire, passionnée par le développement web, les systèmes et réseaux, la supervision, la virtualisation, la data, l'intelligence artificielle et l’algorithmique. Je vise à faire évoluer mes compétences dans des projets concrets et impactants.</p>
-        <div class="row" style="margin:1.2rem 0 0">
-          <a class="btn" href="#projets">Voir mes projets</a>
-          <a class="chip" href="mailto:kanoutea39@gmail.com">kanoutea39@gmail.com</a>
-        </div>
-        <div class="kpi" style="margin-top:1.2rem">
-          <div class="item card"><div class="n">12+</div><div class="muted">Projets académiques</div></div>
-          <div class="item card"><div class="n">3</div><div class="muted">Stacks: Symfony · React · Python</div></div>
-          <div class="item card"><div class="n">CCNA</div><div class="muted">Labs réseaux & sécurité</div></div>
-        </div>
+  
+:root{--muted:#bcc7d7}.container{max-width:1050px}p{line-height:1.6}.nav nav{display:flex;gap:1rem;flex-wrap:wrap}.hero{grid-template-columns:1.5fr 1fr}.hero h1{font-size:clamp(2.8rem,6vw,5.2rem);letter-spacing:-.055em}.hero aside{border-left:2px solid var(--accent);padding-left:1.6rem}.hero aside p{margin:.4em 0}.row{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.project{padding:1.5rem 0;border-top:1px solid #384258;display:grid;grid-template-columns:1fr 2fr;gap:2rem}.project p{margin:.4em 0 .8em}.project h3{font-size:1.65rem;margin:.3rem 0}.project small,.date{color:#9bdcf4}.source{color:#9bdcf4;text-decoration:underline;text-underline-offset:4px}.card h3{margin-top:0}.card p{margin-bottom:0}.date{font-weight:700}section[id]{scroll-margin-top:4rem}header{background:#0b1020f5}.nav a:hover,.source:hover{color:white}a:focus-visible{outline:3px solid #faf08a;outline-offset:4px}h2{font-size:2rem}footer{padding:1.4rem 0}body{min-height:100%;height:auto} @media(max-width:700px){.hero,.project,.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}.project{gap:.3rem}.nav{align-items:start}.nav nav{gap:.5rem;font-size:.85rem}.hero{padding-top:2rem}.hero aside{margin-bottom:1rem}.nav a.logo{margin-right:.8rem}}
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="logo" href="#accueil" aria-label="Accueil, Aïssatou Kanouté">AK</a>
+        <nav aria-label="Navigation principale">
+          <a href="#projets">Projets</a>
+          <a href="#parcours">Parcours</a>
+          <a href="#competences">Compétences</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class="card">
-        <h2>Points forts</h2>
-        <ul class="muted" style="line-height:1.8">
-          <li>Dév. web: Symfony, Node/Express, React</li>
-          <li>Bases de données: MySQL, PostgreSQL</li>
-          <li>Ops: Linux, Nginx, Docker (basics)</li>
-          <li>Réseaux: VLAN, OSPF, HSRP, Routage</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROJETS -->
-    <section id="projets">
-      <h2>Projets</h2>
-      <div class="grid cols-3">
-        <article class="card proj">
-          <div class="muted">Linux • Apache • MySQL • PHP</div>
-          <h3>Projet LAMP 2‑tiers (VM Ubuntu)</h3>
-          <p class="muted">Déploiement d’une architecture 2‑tiers sur Ubuntu avec services séparés, base MySQL et hébergement web Apache.</p>
-        </article>
-        <article class="card proj">
-          <div class="muted">Supervision • Parc informatique</div>
-          <h3>GLPI + Zabbix + Grafana</h3>
-          <p class="muted">Mise en place supervision réseau avec GLPI pour gestion d’inventaire et Zabbix + Grafana pour tableaux de bord.</p>
-        </article>
-        <article class="card proj">
-          <div class="muted">SMTP • Webmail</div>
-          <h3>Roundcube + stack mail</h3>
-          <p class="muted">Configuration d’un serveur mail complet avec webmail Roundcube, gestion et consultation de messagerie via interface.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- COMPÉTENCES -->
-    <section id="competences">
-      <h2>Compétences</h2>
-      <div class="grid cols-3">
-        <div class="card">
-          <strong>Programmation</strong>
-          <p class="muted">Bases en algorithmique, scripts et automation de tâches</p>
-        </div>
-        <div class="card">
-          <strong>Développement Web</strong>
-          <p class="muted">Stack LAMP, bases PHP/MySQL, HTML/CSS</p>
-        </div>
-        <div class="card">
-          <strong>Administration Systèmes</strong>
-          <p class="muted">Linux/Ubuntu, virtualisation</p>
-        </div>
-        <div class="card">
-          <strong>Supervision</strong>
-          <p class="muted">GLPI, Zabbix couplé à Grafana</p>
-        </div>
-        <div class="card">
-          <strong>Modélisation & Données</strong>
-          <p class="muted">SQL, Modélisation UML</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PARCOURS -->
-    <section id="parcours">
-      <h2>Parcours</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <strong>Licence GLRS — ISM Dakar</strong>
-          <p class="muted">Génie Logiciel, Réseaux & Systèmes (2023–2026)</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <p class="muted">Je suis ouverte aux opportunités (alternance, stage, missions). Écrivez‑moi ou connectons‑nous.</p>
+    </header>
+    <main class="container">
+      <section class="hero" id="accueil">
+        <div>
+          <p>Développeuse full stack junior · Lille</p>
+          <h1>Aïssatou Kanouté</h1>
+          <p>Je développe des applications en Java, Spring Boot et React. Avec Sen-E-Docteur, je suis partie d’une enquête sur la prise de rendez-vous au Sénégal pour construire et déployer un service pour les patients et les médecins.</p>
           <div class="row">
-            <a class="btn" href="mailto:kanoutea39@gmail.com" aria-label="Envoyer un email">Me contacter</a>
-            <a class="chip" href="https://github.com/aissatou0" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#projets">Explorer mes projets</a>
+            <a class="source" href="CV_Aissatou_Kanoute_Full_Stack.pdf">Mon CV en PDF</a>
           </div>
         </div>
-        <form class="card" onsubmit="event.preventDefault(); alert('Merci ! Votre message a été envoyé.');">
-          <label class="muted" for="m">Envoyer un message</label>
-          <textarea id="m" rows="4" style="width:100%; margin-top:.5rem; padding:.8rem; border-radius:10px; background:#0b1228; border:1px solid rgba(148,163,184,.25); color:var(--text)" placeholder="Votre message..."></textarea>
-          <div style="margin-top:.6rem"><button class="btn" type="submit">Envoyer</button></div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      © <span id="y"></span> • Aissatou Diakhaby KANOUTE — Portfolio. Dernière maj : <span id="maj"></span>
-    </div>
-  </footer>
-
-  <script>
-    // Petites améliorations UX
-    document.getElementById('y').textContent = new Date().getFullYear();
-    document.getElementById('maj').textContent = new Date().toLocaleDateString('fr-FR');
-  </script>
-</body>
+        <aside>
+          <h2>Alternance M2</h2>
+          <p>Septembre 2027 · année 2027–2028</p>
+          <p>Développement full stack ou backend Java / Spring Boot.</p>
+          <p>Master 1 Informatique, parcours Génie logiciel · Université de Lille.</p>
+        </aside>
+      </section>
+      <section id="projets">
+        <h2>Projets</h2>
+        <article class="project">
+          <div>
+            <small>Projet personnel et mémoire de licence · 2026</small>
+            <h3>Sen-E-Docteur</h3>
+          </div>
+          <div>
+            <p>Pour simplifier la prise de rendez-vous médicaux au Sénégal, j’ai interrogé des utilisateurs potentiels, puis développé une plateforme pour les patients, les médecins et les administrateurs.</p>
+            <p>J’ai relié le front-end React à une API REST Java/Spring Boot et à PostgreSQL pour prendre, consulter et annuler les rendez-vous. J’ai intégré la connexion Google, Cloudinary pour les images et Jitsi Meet pour les téléconsultations, puis déployé l’interface sur Vercel et l’API sur Render. Mon mémoire de licence a obtenu la mention Très Bien.</p>
+            <div class="row">
+              <a class="source" href="https://sen-e-docteur-kxyk.vercel.app/">Ouvrir Sen-E-Docteur</a>
+              <a class="source" href="https://github.com/aissatou0/Sen-E-Docteur">Code sur GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <div>
+            <small>Projet fil rouge · PST&amp;B Paris · 2026</small>
+            <h3>WorldScope</h3>
+          </div>
+          <div>
+            <p>Une application pour explorer les pays, comparer leurs données géographiques et démographiques et exporter une sélection en JSON.</p>
+            <p>J’ai développé la recherche, les filtres, le tri et les fiches pays avec React et Redux Toolkit. Une API Node.js/Express interroge REST Countries. J’ai validé six tests avec Vitest, configuré les accès CORS et déployé l’application sur Vercel et Render.</p>
+            <div class="row">
+              <a class="source" href="https://tp-fil-rouge-worldscope.vercel.app/">Ouvrir WorldScope</a>
+              <a class="source" href="https://github.com/aissatou0/tp-fil-rouge-worldscope">Code sur GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <div>
+            <small>Projet académique · 2026</small>
+            <h3>Assistant documentaire local</h3>
+          </div>
+          <div>
+            <p>Un assistant qui répond aux questions sur des documents PDF et indique les passages utilisés.</p>
+            <p>En Python, j’ai découpé et indexé les documents dans ChromaDB pour retrouver les extraits pertinents par recherche vectorielle. Ollama génère la réponse localement et Streamlit affiche les sources.</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h2>Autres réalisations</h2>
+        <div class="grid cols-2">
+          <article class="card">
+            <h3>Brasil Burger</h3>
+            <p>Application de gestion commerciale en PHP/Symfony. Travaux sur l’administration des données commerciales, les requêtes AJAX et les services externes.</p>
+          </article>
+          <article class="card">
+            <h3>Systèmes et supervision</h3>
+            <p>Configuration de GLPI et Active Directory, supervision avec Zabbix, Prometheus et Grafana dans des environnements Linux et Windows Server.</p>
+          </article>
+          <article class="card">
+            <h3>Infrastructure web</h3>
+            <p>Déploiement en travaux pratiques d’une architecture LAMP à deux niveaux sous Ubuntu avec services web et base MySQL séparés.</p>
+          </article>
+          <article class="card">
+            <h3>Messagerie</h3>
+            <p>Configuration d’un serveur de messagerie avec Roundcube, Postfix et Dovecot. Travaux sur DNS, SMTP et IMAP.</p>
+          </article>
+        </div>
+      </section>
+      <section id="parcours">
+        <h2>Parcours académique</h2>
+        <div class="grid cols-2">
+          <article class="card">
+            <p class="date">2026–2027</p>
+            <h3>Master 1 Informatique, parcours Génie logiciel</h3>
+            <strong>Université de Lille</strong>
+            <p>Algorithmique et complexité, programmation avancée en C++, conception, architecture et qualité logicielle.</p>
+          </article>
+          <article class="card">
+            <p class="date">2026</p>
+            <h3>Semestre d’échange en troisième année de licence</h3>
+            <strong>Paris School of Technology &amp; Business</strong>
+            <p>Deuxième semestre de L3 suivi en anglais. Projet fil rouge WorldScope.</p>
+          </article>
+          <article class="card">
+            <p class="date">2024–2026</p>
+            <h3>Licence Génie logiciel, réseaux et systèmes</h3>
+            <strong>Institut Supérieur de Management, Dakar</strong>
+            <p>Mention Très Bien. Développement logiciel, bases de données, systèmes et réseaux. Mémoire consacré à Sen-E-Docteur.</p>
+          </article>
+          <article class="card">
+            <p class="date">2022–2023</p>
+            <h3>Licence 1 Génie informatique</h3>
+            <strong>Université Dakar Bourguiba</strong>
+            <p>Première année validée avec la mention Très Bien.</p>
+          </article>
+        </div>
+      </section>
+      <section id="competences">
+        <h2>Compétences techniques</h2>
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Backend et données</h3>
+            <p>Java, Spring Boot, API REST, Node.js, Express, PHP/Symfony, SQL, PostgreSQL et MySQL.</p>
+          </article>
+          <article class="card">
+            <h3>Interfaces web</h3>
+            <p>JavaScript, React, Vite, Redux Toolkit, React Query, React Router, TanStack Router, HTML et CSS.</p>
+          </article>
+          <article class="card">
+            <h3>Tests et livraison</h3>
+            <p>Tests unitaires avec Vitest, Git, GitHub, GitLab, Docker, Vercel et Render.</p>
+          </article>
+          <article class="card">
+            <h3>Conception logicielle</h3>
+            <p>Programmation orientée objet, UML, MVC, modélisation de données, Figma, Agile et Scrum.</p>
+          </article>
+          <article class="card">
+            <h3>IA documentaire</h3>
+            <p>Python, Streamlit, indexation de PDF, embeddings, recherche vectorielle avec ChromaDB et génération locale avec Ollama.</p>
+          </article>
+          <article class="card">
+            <h3>Fondamentaux</h3>
+            <p>Algorithmique, analyse de complexité, C et C++. Français courant et anglais intermédiaire, pratiqué en cours et en documentation.</p>
+          </article>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Échangeons</h2>
+        <p>Vous cherchez une alternante pour développer une API Java ou une application full stack à partir de septembre 2027 ?</p>
+        <div class="row">
+          <a class="btn" href="mailto:kanoutea39@gmail.com">M’écrire</a>
+          <a class="source" href="https://www.linkedin.com/in/aissatou-kanoute-ba72973b6/">LinkedIn</a>
+          <a class="source" href="https://github.com/aissatou0">GitHub</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">Aïssatou Kanouté · Lille, France</div>
+    </footer>
+  </body>
 </html>
